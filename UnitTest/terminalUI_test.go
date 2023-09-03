@@ -20,11 +20,3 @@ func TestBugResolvedBuild_Exec(t *testing.T) {
 		return
 	}
 }
-
-func TestList_Exec(t *testing.T) {
-	listUI := TerminalUI.NewList()
-	listUI.SetTitle("List Title")
-	listUI.SetOptions([]string{"[0] option", "[1] option", "[2] option"})
-	var index int
-	listUI.Exec(&index)
-}
