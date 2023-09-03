@@ -16,7 +16,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: go1.20.2 windows/amd64
+        go-version: go1.20.2
 
     - name: Build
       run: go build
