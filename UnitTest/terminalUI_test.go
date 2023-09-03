@@ -27,5 +27,4 @@ func TestList_Exec(t *testing.T) {
 	listUI.SetOptions([]string{"[0] option", "[1] option", "[2] option"})
 	var index int
 	listUI.Exec(&index)
-	var 1
 }
