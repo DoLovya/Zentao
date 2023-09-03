@@ -1,0 +1,25 @@
+name: Go CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.x # 设置所需的 Go 版本
+          
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: go build ./
+
+      - name: Test
+        run: go test ./UnitTest
